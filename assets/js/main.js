@@ -36,11 +36,11 @@ function convert() {
   let currValue = clp.value;
   let rateValue = document.getElementById("currency").value;
   let resultConvert = parseFloat(currValue / rateValue).toFixed(2);
-  result.innerHTML = `${resultConvert}`;
+  result.innerHTML = `$${resultConvert}`;
   console.log(rateValue);
   console.log(clp.value);
+  /*
   let today = new Date();
-
   let counterDate = 10;
   let trackDate = today;
   while(counterDate>0){
@@ -49,11 +49,11 @@ function convert() {
     counterDate --;
     console.log(trackDate);
   }
-  
+  */
 }
 
-async function getCurrencyByDate(date){
+/*async function getCurrencyByDate(date){
     let endPoint = `${apiURL}/fecha/${date}`;
     const res = await fetch(apiURL);
     const currencies = await res.json();
-}
+}*/
